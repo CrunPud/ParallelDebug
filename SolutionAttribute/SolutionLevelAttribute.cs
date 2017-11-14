@@ -7,16 +7,16 @@ namespace SolutionAttribute
     [AttributeUsage(AttributeTargets.Assembly)]
     public class SolutionLevelAttribute : Attribute, ITestAction
     {
-        public ActionTargets Targets => throw new NotImplementedException();
+        public ActionTargets Targets => ActionTargets.Suite;
 
         public void AfterTest(ITest test)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Running Solution attribute for: " + test.Name);
         }
 
         public void BeforeTest(ITest test)
         {
-            Console.WriteLine("Running suite: " + test.Name);
+            Console.WriteLine("Running Solution attribute for: " + test.Name);
         }
     }
 }

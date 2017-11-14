@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using SolutionAttribute;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using NUnit.Framework;
 
@@ -15,6 +16,7 @@ using NUnit.Framework;
 [assembly: AssemblyCulture("")]
 
 [assembly: Parallelizable(ParallelScope.Fixtures)]
+[assembly: SolutionLevel]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from

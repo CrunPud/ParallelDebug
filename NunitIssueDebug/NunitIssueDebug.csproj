@@ -51,5 +51,14 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionAttribute\SolutionAttribute.csproj">
+      <Project>{558a4246-d8ae-45d8-a29b-d08e45bce29d}</Project>
+      <Name>SolutionAttribute</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

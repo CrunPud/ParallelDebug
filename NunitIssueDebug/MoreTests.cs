@@ -10,13 +10,15 @@ namespace NunitIssueDebug
         [Test]
         public void WaitSeconds()
         {
-            int sleepTime = 15;
+            int sleepTime = 10;
 
             DateTime start = DateTime.Now;
 
             Thread.Sleep(sleepTime * 1000);
 
-            int runTime = (DateTime.Now - start).Seconds;
+            DateTime end = DateTime.Now;
+
+            double runTime = (end - start).TotalSeconds;
 
             Assert.GreaterOrEqual(runTime, sleepTime, "Thread.Sleep does not work as expected");
         }
