@@ -7,13 +7,13 @@ namespace NunitIssueDebug
     [SetUpFixture]
     public class Setup
     {
-        [SetUp]
+        [OneTimeSetUp]
         public void TestSetup()
         {
             Console.WriteLine("Setting up the test");
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void TearDown()
         {
             Thread.Sleep(500);

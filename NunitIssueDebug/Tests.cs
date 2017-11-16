@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace NunitIssueDebug
 {
     [TestFixture]
-    public class Tests
+    public class Tests : Setup
     {
         [Test]
         public void WaitMilliseconds()
