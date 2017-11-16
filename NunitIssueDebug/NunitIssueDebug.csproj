@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AssemblySetup.cs" />
     <Compile Include="MoreTests.cs" />
+    <Compile Include="Setup.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
